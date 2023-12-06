@@ -5,6 +5,10 @@ html {
     --color-light: #76777C;
 }
 
+a {
+    text-decoration: none;
+}
+
 .material-symbols-outlined {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -28,16 +32,74 @@ body {
 
 header {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     min-height: 10vh;
     padding: 0 1vw;
     background: var(--secondary-bg-color);
 }
 
+#menu {
+    display: none;
+    position: fixed;
+    background-color: var(--color-dark);
+    font-size: 12vw;
+    padding-right: 30px;
+    z-index: 9999;
+    transition: all .5s ease;
+}
+
+#menu > ul > li {
+    list-style: none;
+}
+
+#menu-nav > li > a {
+    transition: 70ms;
+    color: black;
+}
+
+#menu-nav > li > a:hover {
+    color: white;
+}
+
+#menu-nav > li > a:not(hover) {
+    color: black;
+}
+
+#menu-nav {
+    margin-bottom: 0;
+}
+
+#menu-nav > hr {
+    border: 1px var(--color-light) solid;
+    margin: 5px 0;
+}
+
+#menu-outer-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh 0;
+}
+
+#menu-outer-links img {
+    width: 130px;
+}
+
 #menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     vertical-align: middle;
     font-size: 6vh;
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+    #menu {
+        font-size: 4vw;
+    }
+    #menu-outer-links img {
+        width: 250px;
+    }
 }
 
 #header-name {
