@@ -227,3 +227,46 @@ header {
         margin: 0 28.2vw;
     }
 }
+
+#prices-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.price-option {
+    width: 90vw;
+    display: inline-block;
+    background-color: var(--color-dark);
+    text-align: center;
+}
+
+.price-option-info {
+    padding: 2.2vw;
+}
+
+.price-option > img {
+    width: 100%;
+    aspect-ratio: 1280/848;
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+    #prices-container {
+        flex-direction: row;
+        padding: 4vw;
+    }
+    .price-option {
+        width: 27.4vw;
+    }
+}
+
+.price-option-info > h2 {
+    font-size: 2vw;
+}
+.price-option-info > h3 {
+    font-size: 2.5vw;
+}
+.price-option-info > p {
+    font-size: 1vw;
+}
