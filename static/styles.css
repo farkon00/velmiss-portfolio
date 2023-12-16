@@ -71,7 +71,7 @@ header {
 }
 
 #menu-nav > hr {
-    border: 1px var(--color-light) solid;
+    border: 2px var(--color-light) solid;
     margin: 5px 0;
 }
 
@@ -216,7 +216,7 @@ header {
 .about-me-text {
     margin: 0;
     margin-bottom: 1vh;
-    font-size: 35px;
+    font-size: 14px;
 }
 
 @media only screen and (min-aspect-ratio: 1/1) {
@@ -229,6 +229,9 @@ header {
 }
 
 #prices-container {
+    /* padding: 4vw; */
+    padding-bottom: 0;
+    height: 110%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -236,10 +239,11 @@ header {
 }
 
 .price-option {
-    width: 90vw;
+    width: 80vw;
     display: inline-block;
     background-color: var(--color-dark);
     text-align: center;
+    margin: 4vw;
 }
 
 .price-option-info {
@@ -251,22 +255,33 @@ header {
     aspect-ratio: 1280/848;
 }
 
+.price-option-info > h2 {
+    white-space: nowrap;
+    font-size: 4vw;
+}
+.price-option-info > h3 {
+    white-space: nowrap;
+    font-size: 4.5vw;
+}
+.price-option-info > p {
+    font-size: 3vw;
+}
+
 @media only screen and (min-aspect-ratio: 1/1) {
     #prices-container {
         flex-direction: row;
-        padding: 4vw;
+        height: auto;
     }
     .price-option {
         width: 27.4vw;
     }
-}
-
-.price-option-info > h2 {
-    font-size: 2vw;
-}
-.price-option-info > h3 {
-    font-size: 2.5vw;
-}
-.price-option-info > p {
-    font-size: 1vw;
+    .price-option-info > h2 {
+        font-size: 2vw;
+    }
+    .price-option-info > h3 {
+        font-size: 2.5vw;
+    }
+    .price-option-info > p {
+        font-size: 1vw;
+    }
 }
