@@ -82,7 +82,7 @@ header {
 }
 
 #menu-outer-links img {
-    width: 130px;
+    width: 15vw;
 }
 
 #menu-button {
@@ -138,7 +138,7 @@ header {
 }
 
 #title-subtext {
-    font-size: 50px;
+    font-size: min(5vw, 5vh);
     text-align: center;
     margin: 0;
 }
