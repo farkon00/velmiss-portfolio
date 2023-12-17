@@ -113,7 +113,7 @@ header {
 }
 
 #title-background {
-    background-image: url("/static/images/banner.jpg");
+    background-image: url("../static/images/banner.jpg");
     background-repeat: no-repeat;
     background-size: 100vw auto;
     width: 100vw;
@@ -200,7 +200,7 @@ header {
 }
 
 #about-me-banner {
-    background-image: url("/static/images/about-me-banner.jpg");
+    background-image: url("../static/images/about-me-banner.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     aspect-ratio: 810/540;
